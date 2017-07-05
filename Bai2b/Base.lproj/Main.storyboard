@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bai2b" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="23I-rM-BGZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="346"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zgi-3y-TCC">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="173"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uPT-FG-v4o">
+                                        <rect key="frame" x="0.0" y="173" width="375" height="173"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="23I-rM-BGZ" secondAttribute="height" multiplier="375:346" id="3oI-1O-sdB"/>
+                                    <constraint firstItem="zgi-3y-TCC" firstAttribute="top" secondItem="23I-rM-BGZ" secondAttribute="top" id="IMw-ef-lg6"/>
+                                    <constraint firstItem="zgi-3y-TCC" firstAttribute="leading" secondItem="23I-rM-BGZ" secondAttribute="leading" id="RjF-Ms-QPX"/>
+                                    <constraint firstAttribute="trailing" secondItem="zgi-3y-TCC" secondAttribute="trailing" id="cHp-QF-tSK"/>
+                                    <constraint firstItem="zgi-3y-TCC" firstAttribute="height" secondItem="uPT-FG-v4o" secondAttribute="height" id="dnl-6d-Gl7"/>
+                                    <constraint firstItem="uPT-FG-v4o" firstAttribute="top" secondItem="zgi-3y-TCC" secondAttribute="bottom" id="yPE-Nw-N1Q"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nmQ-ay-KrT">
+                                <rect key="frame" x="0.0" y="346" width="375" height="84"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4xQ-tO-MGr">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+                                        <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wVe-1p-1KE">
+                                        <rect key="frame" x="0.0" y="42" width="375" height="42"/>
+                                        <color key="backgroundColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4xQ-tO-MGr" firstAttribute="height" secondItem="wVe-1p-1KE" secondAttribute="height" id="aPW-vp-6eu"/>
+                                    <constraint firstAttribute="width" secondItem="nmQ-ay-KrT" secondAttribute="height" multiplier="125:28" id="oVl-ms-xYj"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ar-ef-SJb">
+                                <rect key="frame" x="0.0" y="432" width="375" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="96k-Cw-13M"/>
+                                </constraints>
+                                <state key="normal" title="Load Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yMe-wm-CG5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nmQ-ay-KrT" firstAttribute="top" secondItem="23I-rM-BGZ" secondAttribute="bottom" id="5Un-1p-4vi"/>
+                            <constraint firstItem="8ar-ef-SJb" firstAttribute="top" secondItem="nmQ-ay-KrT" secondAttribute="bottom" constant="2" id="9Ao-OZ-xKu"/>
+                            <constraint firstItem="23I-rM-BGZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C2r-dI-E5N"/>
+                            <constraint firstItem="nmQ-ay-KrT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IYh-KP-HQ3"/>
+                            <constraint firstAttribute="trailing" secondItem="23I-rM-BGZ" secondAttribute="trailing" id="Mtk-fj-DvK"/>
+                            <constraint firstAttribute="trailing" secondItem="nmQ-ay-KrT" secondAttribute="trailing" id="aSd-TX-ahc"/>
+                            <constraint firstAttribute="trailing" secondItem="8ar-ef-SJb" secondAttribute="trailing" id="ewO-bq-eZN"/>
+                            <constraint firstItem="23I-rM-BGZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iBf-lJ-Dwo"/>
+                            <constraint firstItem="8ar-ef-SJb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="le8-QA-PIu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image1" destination="zgi-3y-TCC" id="rFd-FR-vBd"/>
+                        <outlet property="image2" destination="uPT-FG-v4o" id="eOp-bO-CiS"/>
+                        <outlet property="urlImage1" destination="4xQ-tO-MGr" id="iFq-Sd-fvV"/>
+                        <outlet property="urlImage2" destination="wVe-1p-1KE" id="H0g-Jh-L9h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
